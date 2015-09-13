@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#import "SNES.h"
-#import "SNESConstants.h"
+#import <SNES/SNESKit.h>
 
 @interface SNES ()
 @property (nonatomic) SNESState state;

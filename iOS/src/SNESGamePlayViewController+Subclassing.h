@@ -8,8 +8,7 @@
 
 #import "SNESGamePlayViewController.h"
 #import "ConsoleGame.h"
-#import "SNES.h"
-#import "CGGameControllerForSNESInterpreter.h"
+#import <SNES/SNESKit.h>
 
 #if TARGET_OS_TV
     #import "SuperNES_TV-Swift.h"

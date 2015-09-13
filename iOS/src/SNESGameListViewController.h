@@ -7,6 +7,7 @@
 //
 
 @import UIKit;
+#import <SNES/SNESKit.h>
 
 #if TARGET_OS_TV
     #import "SuperNES_TV-Swift.h"

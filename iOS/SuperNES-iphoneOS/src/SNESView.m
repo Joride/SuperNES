@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 KerrelInc. All rights reserved.
 //
 
+#import <SNES/SNESKit.h>
 #import "SNESView.h"
 #import "ConsoleFireButtons.h"
 

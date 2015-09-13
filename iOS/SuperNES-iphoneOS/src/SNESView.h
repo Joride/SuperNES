@@ -7,7 +7,7 @@
 //
 
 @import UIKit;
-#import "SNES.h"
+#import <SNES/SNESKit.h>
 
 @interface SNESView : UIView <SNESController>
 @property (nonatomic, strong) CALayer * videoOutputLayer;

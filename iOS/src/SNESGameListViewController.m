@@ -10,7 +10,6 @@
 #import "SNESGameCollectionViewCell.h"
 #import "ConsoleGame.h"
 #import "SNESGamePlayViewController.h"
-#import "SNES.h"
 
 NSString * const cellID = @"cellID";
 
