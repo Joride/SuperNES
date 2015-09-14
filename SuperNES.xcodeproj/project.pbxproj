@@ -11,6 +11,7 @@
 		A27B50B41BA60D04002904F6 /* SNES.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A27B50B81BA60D10002904F6 /* SNES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; };
 		A27B50B91BA60D10002904F6 /* SNES.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A283D4361BA68EE7009D5512 /* SNES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; };
 		A2F20BF31BA5C52F0055FE0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20BE61BA5C52F0055FE0D /* AppDelegate.m */; };
 		A2F20BF41BA5C52F0055FE0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20BE61BA5C52F0055FE0D /* AppDelegate.m */; };
 		A2F20BF71BA5C52F0055FE0D /* ConsoleGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20BE91BA5C52F0055FE0D /* ConsoleGame.m */; };
@@ -67,6 +68,13 @@
 			remoteInfo = SNES;
 		};
 		A27B50BA1BA60D10002904F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A27B50AD1BA60CE3002904F6 /* SNES.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A2F20C531BA5CD580055FE0D;
+			remoteInfo = SNES;
+		};
+		A283D4341BA68EDE009D5512 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A27B50AD1BA60CE3002904F6 /* SNES.xcodeproj */;
 			proxyType = 1;
@@ -185,6 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A283D4361BA68EE7009D5512 /* SNES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +474,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A283D4351BA68EDE009D5512 /* PBXTargetDependency */,
 				C47EDC211A4F477600770F2C /* PBXTargetDependency */,
 			);
 			name = SuperNESTests;
@@ -630,6 +640,11 @@
 			isa = PBXTargetDependency;
 			name = SNES;
 			targetProxy = A27B50BA1BA60D10002904F6 /* PBXContainerItemProxy */;
+		};
+		A283D4351BA68EDE009D5512 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SNES;
+			targetProxy = A283D4341BA68EDE009D5512 /* PBXContainerItemProxy */;
 		};
 		C47EDC211A4F477600770F2C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

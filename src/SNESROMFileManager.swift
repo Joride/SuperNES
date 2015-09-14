@@ -271,7 +271,6 @@ class ROM :  NSObject, SNESROMFileManaging, CustomDebugStringConvertible, Compar
     var SRAMPath : String {
         get
         {
-            let SRAMPath : String?
             let ROMFolderPath = (self.fileManager.userDocumentsDirectory as NSString).stringByAppendingPathComponent(self.ROMName)
             self.createFolderAtPathIfNecessary(ROMFolderPath)
 
