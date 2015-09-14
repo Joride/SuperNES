@@ -44,7 +44,6 @@
 		A2F20C3E1BA5C88B0055FE0D /* SNESGamePlayViewController_iphoneos.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C2D1BA5C88B0055FE0D /* SNESGamePlayViewController_iphoneos.m */; };
 		A2F20C3F1BA5C88B0055FE0D /* SNESView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C2F1BA5C88B0055FE0D /* SNESView.m */; };
 		A2F20C401BA5C88B0055FE0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C311BA5C88B0055FE0D /* Images.xcassets */; };
-		A2F20C411BA5C88B0055FE0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C321BA5C88B0055FE0D /* Info.plist */; };
 		A2F20C461BA5CAF20055FE0D /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C441BA5CAF20055FE0D /* CALayer+Image.swift */; };
 		A2F20C471BA5CAF20055FE0D /* CALayer+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C441BA5CAF20055FE0D /* CALayer+Image.swift */; };
 		A2F20C481BA5CAF20055FE0D /* SNESROMFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C451BA5CAF20055FE0D /* SNESROMFileManager.swift */; };
@@ -482,7 +481,7 @@
 				CLASSPREFIX = SNES;
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = SuperNES;
 				TargetAttributes = {
 					A26BD21E1BA1F011008EC2B9 = {
@@ -553,7 +552,6 @@
 			files = (
 				A2F20C381BA5C88B0055FE0D /* SNESStart@2x.png in Resources */,
 				A2F20C3C1BA5C88B0055FE0D /* Main.storyboard in Resources */,
-				A2F20C411BA5C88B0055FE0D /* Info.plist in Resources */,
 				A2F20C361BA5C88B0055FE0D /* SNESSelect@2x.png in Resources */,
 				A2F20C341BA5C88B0055FE0D /* SNESFireButtons@2x original.png in Resources */,
 				A2F20C371BA5C88B0055FE0D /* SNESShoulderButton@2x.png in Resources */,
@@ -733,6 +731,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -863,6 +862,7 @@
 				);
 				INFOPLIST_FILE = SuperNESTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snes9x.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperNES.app/SuperNES";
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -879,6 +879,7 @@
 				);
 				INFOPLIST_FILE = SuperNESTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.snes9x.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SuperNES.app/SuperNES";
 				VALID_ARCHS = "armv7 armv7s arm64";
