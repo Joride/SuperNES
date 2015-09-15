@@ -9,6 +9,11 @@
 #import "SNESGamePlayViewController_tvos.h"
 #import "SNESGamePlayViewController+Subclassing.h"
 
+@interface SNESGamePlayViewController_tvos ()
+<SNESController, UIGestureRecognizerDelegate>
+@property (atomic) SNESControllerOutput output;
+@end
+
 @implementation SNESGamePlayViewController_tvos
 -(void)viewDidLoad
 {
@@ -27,7 +32,46 @@
                                                  initWithTarget: self
                                                  action: @selector(selectButtonTapped:)];
     selectRecognizer.allowedPressTypes = @[@(UIPressTypeSelect)];
+    selectRecognizer.delegate  = self;
     [self.view addGestureRecognizer: selectRecognizer];
+
+
+    [self.console connectControllerOne: self];
+
+//    [self setupGameControlGesturecognizers];
+}
+-(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
+      shouldReceivePress:(UIPress *)press
+{
+    return (press.type == UIPressTypeSelect);
+}
+-(void) setupGameControlGesturecognizers
+{
+    UITapGestureRecognizer * upRecognizer = [[UITapGestureRecognizer alloc]
+                                             initWithTarget: self
+                                             action: @selector(upButtonTapped:)];
+    upRecognizer.allowedPressTypes = @[@(UIPressTypeUpArrow)];
+    [self.view addGestureRecognizer: upRecognizer];
+
+    UITapGestureRecognizer * downRecognizer = [[UITapGestureRecognizer alloc]
+                                               initWithTarget: self
+                                               action: @selector(downButtonTapped:)];
+    downRecognizer.allowedPressTypes = @[@(UIPressTypeDownArrow)];
+    [self.view addGestureRecognizer: downRecognizer];
+
+
+    UITapGestureRecognizer * leftRecognizer = [[UITapGestureRecognizer alloc]
+                                               initWithTarget: self
+                                               action: @selector(leftButtonTapped:)];
+    leftRecognizer.allowedPressTypes = @[@(UIPressTypeLeftArrow)];
+    [self.view addGestureRecognizer: leftRecognizer];
+
+
+    UITapGestureRecognizer * rightRecognizer = [[UITapGestureRecognizer alloc]
+                                                initWithTarget: self
+                                                action: @selector(rightButtonTapped:)];
+    rightRecognizer.allowedPressTypes = @[@(UIPressTypeRightArrow)];
+    [self.view addGestureRecognizer: rightRecognizer];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -174,7 +218,6 @@
              [self.console loadStateFromFileAtPath: saveStatePath];
              [self.console unPause];
          }];
-
     };
 
     [self presentViewController: selectGameStateViewController
@@ -185,6 +228,48 @@
 {
     [self showOptionsMenu];
 }
+#pragma mark - Console input
+-(void)pressesBegan:(NSSet<UIPress *> *)presses
+          withEvent:(UIPressesEvent *)event
+{
+    for (UIPress * aPress in presses)
+    {
+        switch (aPress.type)
+        {
+            case UIPressTypeDownArrow:
+                self.output |= kSNESControllerOutputDown;
+                break;
+            case UIPressTypeUpArrow:
+                self.output |= kSNESControllerOutputUp;
+                break;
+            case UIPressTypeLeftArrow:
+                self.output |= kSNESControllerOutputLeft;
+                break;
+            case UIPressTypeRightArrow:
+                self.output |= kSNESControllerOutputRight;
+                break;
+                
+            default:
+                break;
+        }
+    }
+}
+-(void)pressesChanged:(NSSet<UIPress *> *)presses
+            withEvent:(UIPressesEvent *)event
+{
+
+}
+-(void)pressesEnded:(NSSet<UIPress *> *)presses
+          withEvent:(UIPressesEvent *)event
+{
+
+}
+-(void)pressesCancelled:(NSSet<UIPress *> *)presses
+              withEvent:(UIPressesEvent *)event
+{
+
+}
+
 #pragma mark - Controller handling
 -(void)controllerDidConnect:(NSNotification *)notification
 {
