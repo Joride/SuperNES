@@ -50,7 +50,7 @@
 }
 -(void)setConsoleGame:(id<SNESROMFileManaging>)consoleGame
 {
-    if (_consoleGame != consoleGame)
+    if (![_consoleGame.ROMPath isEqualToString: consoleGame.ROMPath])
     {
         [self.console powerOff];
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -89,8 +89,15 @@
 }
 - (void) startConsole
 {
-    [self.console inserROMFileAtPath: self.consoleGame.ROMPath];
-    [self.console powerOnWithDelegate: self];
+    if (![[self.console currentlyInsertedROM] isEqualToString: self.consoleGame.ROMPath])
+    {
+        [self.console inserROMFileAtPath: self.consoleGame.ROMPath];
+        [self.console powerOnWithDelegate: self];
+    }
+    else
+    {
+        [self.console unPause];
+    }
 }
 -(void)showOptionsMenu
 {
@@ -110,6 +117,7 @@
 {
     NSAssert(NO, @"Subclasses should implement this.");
 }
+
 
 
 #pragma mark - SNESDelegate

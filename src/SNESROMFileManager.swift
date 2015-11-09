@@ -359,11 +359,49 @@ extension NSFileManager
 {
     var userDocumentsDirectory : String {
         get {
-            let URLs = self.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-            let URL : NSURL? = URLs.last!
-            // Userdocumentsdir alway exists, so i'm taking the
-            // bold risk of force-unwrapping this optional.
-            return URL!.path!
+            // this hackery is here because on tvOS we cannot add the smc files
+            // into the documents directory, so we have to add them to the 
+            // project. 
+            // Changing this code here is the least amount of change to get
+            // it working (not saying this is a good, permanent solution,
+            // but at least we get to play games on tvOS now).
+            let path : String
+            #if TARGET_OS_TV
+                let bundle = NSBundle.mainBundle()
+                if let URL = bundle.URLForResource("Aladdin", withExtension: "smc")
+                {
+                    if let actualURL = URL.URLByDeletingLastPathComponent
+                    {
+                        if let thePath = actualURL.path
+                        {
+                            path = thePath
+                        }
+                        else
+                        {
+                            path = ""
+                            print("could not get 'path' from \(actualURL)")
+                        }
+                    }
+                    else
+                    {
+                        path = ""
+                        print("Could not get URL by deleting last path component from \(URL)")
+                    }
+                }
+                else
+                {
+                    path = ""
+                    print("No URL found in the bunlde for Aladdin.smc")
+                }
+                return path;
+
+            #else
+                let URLs = self.URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+                let URL : NSURL? = URLs.last!
+                // Userdocumentsdir alway exists, so i'm taking the
+                // bold risk of force-unwrapping this optional.
+                return URL!.path!
+            #endif
         }
     }
 }

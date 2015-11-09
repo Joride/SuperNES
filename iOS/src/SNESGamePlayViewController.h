@@ -23,7 +23,11 @@ typedef void(^CompletionHandler)(void);
  @class SNESGamePlayViewController : UIViewController
  class cluster for having one interface both tvOS and iphoneOS
  */
-@interface SNESGamePlayViewController : UIViewController
+#if TARGET_OS_TV
+    @interface SNESGamePlayViewController : GCEventViewController
+#else
+    @interface SNESGamePlayViewController : UIViewController
+#endif
 @property (nonatomic, strong) id<SNESROMFileManaging> consoleGame;
 @property (nonatomic, strong) CompletionHandler completion;
 @end

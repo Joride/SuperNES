@@ -219,6 +219,13 @@
 			name = src;
 			sourceTree = "<group>";
 		};
+		A2575C971BAD4B1100C53C4D /* ROMz */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ROMz;
+			sourceTree = "<group>";
+		};
 		A27B50AE1BA60CE3002904F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -375,9 +382,9 @@
 		C47EDBFD1A4F477600770F2C = {
 			isa = PBXGroup;
 			children = (
+				A2575C971BAD4B1100C53C4D /* ROMz */,
 				A2F20C431BA5C9830055FE0D /* src */,
 				A2BD42EC1BA5A369000A7C00 /* iOS */,
-				C47EDC361A4F490800770F2C /* System Frameworks */,
 				C47EDC221A4F477600770F2C /* SuperNESTests */,
 				C47EDC071A4F477600770F2C /* Products */,
 				A27B50AD1BA60CE3002904F6 /* SNES.xcodeproj */,
@@ -397,6 +404,7 @@
 		C47EDC221A4F477600770F2C /* SuperNESTests */ = {
 			isa = PBXGroup;
 			children = (
+				C47EDC361A4F490800770F2C /* System Frameworks */,
 				C47EDC251A4F477600770F2C /* SuperNESTests.m */,
 				C47EDC231A4F477600770F2C /* Supporting Files */,
 			);
@@ -420,6 +428,7 @@
 				A26BD2941BA1FED8008EC2B9 /* libz.tbd */,
 			);
 			name = "System Frameworks";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

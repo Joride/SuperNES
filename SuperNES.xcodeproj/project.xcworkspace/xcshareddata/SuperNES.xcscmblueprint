@@ -4,15 +4,13 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "AFBB00B52A1933B3FD9BCC1415ADB01EB74D0A37" : 0,
     "D4E410637BC049E015036AC972E7A6ACE426B989" : 0,
-    "52B99F7EF9B071F18F66A04C485CA77D2045C321" : 0
+    "AFBB00B52A1933B3FD9BCC1415ADB01EB74D0A37" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AE448FA6-2EE1-4764-AD1E-51767FE675B5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "AFBB00B52A1933B3FD9BCC1415ADB01EB74D0A37" : "SuperNES\/submodules\/",
     "D4E410637BC049E015036AC972E7A6ACE426B989" : "SuperNES\/",
-    "52B99F7EF9B071F18F66A04C485CA77D2045C321" : "snes"
+    "AFBB00B52A1933B3FD9BCC1415ADB01EB74D0A37" : "SuperNES\/submodules\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "SuperNES",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -21,7 +19,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/JorritAtHome\/snes.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "52B99F7EF9B071F18F66A04C485CA77D2045C321"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AFBB00B52A1933B3FD9BCC1415ADB01EB74D0A37"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Joride\/SNES.git",

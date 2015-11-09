@@ -21,16 +21,20 @@
 #endif
 
 #if TARGET_OS_TV
-    NSLog(@"\t\t==== Running on tvOS ====");
+    #if TARGET_IPHONE_SIMULATOR
+        NSLog(@"Documents Directory: %@", [[[NSFileManager defaultManager]
+                                            URLsForDirectory: NSDownloadsDirectory
+                                            inDomains:NSUserDomainMask] lastObject]);
+    #endif
 #else
-    NSLog(@"\t\t==== NOT Running on tvOS ====");
+    #if TARGET_IPHONE_SIMULATOR
+        NSLog(@"Documents Directory: %@", [[[NSFileManager defaultManager]
+                                            URLsForDirectory:NSDocumentDirectory
+                                            inDomains:NSUserDomainMask] lastObject]);
+    #endif
+
 #endif
 
-#if TARGET_IPHONE_SIMULATOR
-    NSLog(@"Documents Directory: %@", [[[NSFileManager defaultManager]
-                                        URLsForDirectory:NSDocumentDirectory
-                                        inDomains:NSUserDomainMask] lastObject]);
-#endif
 
 
 

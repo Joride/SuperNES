@@ -12,6 +12,7 @@
 @interface SNESGamePlayViewController_tvos ()
 <SNESController, UIGestureRecognizerDelegate>
 @property (atomic) SNESControllerOutput output;
+@property (nonatomic, strong) NSDate * menuButtonTapDate;
 @end
 
 @implementation SNESGamePlayViewController_tvos
@@ -28,6 +29,13 @@
     playPauseRecognizer.allowedPressTypes = @[@(UIPressTypePlayPause)];
     [self.view addGestureRecognizer: playPauseRecognizer];
 
+    UITapGestureRecognizer * menuRecognizer;
+    menuRecognizer = [[UITapGestureRecognizer alloc]
+                           initWithTarget: self
+                           action: @selector(menuButtonTapped:)];
+    menuRecognizer.allowedPressTypes = @[@(UIPressTypeMenu)];
+    [self.view addGestureRecognizer: menuRecognizer];
+
     UITapGestureRecognizer * selectRecognizer = [[UITapGestureRecognizer alloc]
                                                  initWithTarget: self
                                                  action: @selector(selectButtonTapped:)];
@@ -35,49 +43,45 @@
     selectRecognizer.delegate  = self;
     [self.view addGestureRecognizer: selectRecognizer];
 
-
-    [self.console connectControllerOne: self];
-
-//    [self setupGameControlGesturecognizers];
+}
+- (void) menuButtonTapped: (UIGestureRecognizer *) gestureRecognizer
+{
+    if (nil != self.menuButtonTapDate)
+    {
+        NSDate * now = [NSDate date];
+        NSTimeInterval timeSincePreviousTap;
+        static CGFloat timeInterval = 0.35;
+        timeSincePreviousTap = [now timeIntervalSinceDate: self.menuButtonTapDate];
+        if (timeSincePreviousTap <= timeInterval)
+        {
+            [self showOptionsMenu];
+        }
+        else if (timeSincePreviousTap > timeInterval)
+        {
+            self.menuButtonTapDate = [NSDate date];
+        }
+    }
+    else
+    {
+        self.menuButtonTapDate = [NSDate date];
+    }
 }
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
       shouldReceivePress:(UIPress *)press
 {
     return (press.type == UIPressTypeSelect);
 }
--(void) setupGameControlGesturecognizers
-{
-    UITapGestureRecognizer * upRecognizer = [[UITapGestureRecognizer alloc]
-                                             initWithTarget: self
-                                             action: @selector(upButtonTapped:)];
-    upRecognizer.allowedPressTypes = @[@(UIPressTypeUpArrow)];
-    [self.view addGestureRecognizer: upRecognizer];
 
-    UITapGestureRecognizer * downRecognizer = [[UITapGestureRecognizer alloc]
-                                               initWithTarget: self
-                                               action: @selector(downButtonTapped:)];
-    downRecognizer.allowedPressTypes = @[@(UIPressTypeDownArrow)];
-    [self.view addGestureRecognizer: downRecognizer];
-
-
-    UITapGestureRecognizer * leftRecognizer = [[UITapGestureRecognizer alloc]
-                                               initWithTarget: self
-                                               action: @selector(leftButtonTapped:)];
-    leftRecognizer.allowedPressTypes = @[@(UIPressTypeLeftArrow)];
-    [self.view addGestureRecognizer: leftRecognizer];
-
-
-    UITapGestureRecognizer * rightRecognizer = [[UITapGestureRecognizer alloc]
-                                                initWithTarget: self
-                                                action: @selector(rightButtonTapped:)];
-    rightRecognizer.allowedPressTypes = @[@(UIPressTypeRightArrow)];
-    [self.view addGestureRecognizer: rightRecognizer];
-}
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     CGRect frameForVideoOutputLayer = CGRectZero;
-    frameForVideoOutputLayer.size = self.console.nativeVideoSize;
+
+    CGFloat height = self.view.bounds.size.height;
+    CGFloat width = (self.view.bounds.size.height /
+                     self.console.nativeVideoSize.height *
+                     self.console.nativeVideoSize.width);
+    frameForVideoOutputLayer.size = CGSizeMake(width, height);
     frameForVideoOutputLayer.origin.x = ((CGRectGetWidth(self.view.bounds) -
                                           frameForVideoOutputLayer.size.width ) / 2.0f);
     frameForVideoOutputLayer.origin.y = ((CGRectGetHeight(self.view.bounds) -
@@ -228,54 +232,85 @@
 {
     [self showOptionsMenu];
 }
-#pragma mark - Console input
--(void)pressesBegan:(NSSet<UIPress *> *)presses
-          withEvent:(UIPressesEvent *)event
-{
-    for (UIPress * aPress in presses)
-    {
-        switch (aPress.type)
-        {
-            case UIPressTypeDownArrow:
-                self.output |= kSNESControllerOutputDown;
-                break;
-            case UIPressTypeUpArrow:
-                self.output |= kSNESControllerOutputUp;
-                break;
-            case UIPressTypeLeftArrow:
-                self.output |= kSNESControllerOutputLeft;
-                break;
-            case UIPressTypeRightArrow:
-                self.output |= kSNESControllerOutputRight;
-                break;
-                
-            default:
-                break;
-        }
-    }
-}
--(void)pressesChanged:(NSSet<UIPress *> *)presses
-            withEvent:(UIPressesEvent *)event
-{
-
-}
--(void)pressesEnded:(NSSet<UIPress *> *)presses
-          withEvent:(UIPressesEvent *)event
-{
-
-}
--(void)pressesCancelled:(NSSet<UIPress *> *)presses
-              withEvent:(UIPressesEvent *)event
-{
-
-}
 
 #pragma mark - Controller handling
--(void)controllerDidConnect:(NSNotification *)notification
+- (void) controllerDidConnect: (NSNotification *) notification
 {
+    NSArray * controllers = [GCController controllers];
+    if (controllers.count > 0)
+    {
+        GCController * gameController = nil;
+        for (GCController * aController in controllers)
+        {
+            if (nil != aController.extendedGamepad)
+            {
+                gameController = aController;
+                break;
+            }
+        }
+
+        if (gameController.playerIndex == 1) {
+            self.controllerTwo = [[CGGameControllerForSNESInterpreter alloc]
+                                  initWithController: gameController];
+        } else if (nil != self.controllerOne) {
+            gameController.playerIndex = 1;
+            self.controllerTwo = [[CGGameControllerForSNESInterpreter alloc]
+                                  initWithController: gameController];
+        } else {
+            gameController.playerIndex = 0;
+            self.controllerOne = [[CGGameControllerForSNESInterpreter alloc]
+                                  initWithController: gameController];
+        }
+    }
+    [self.console connectControllerOne: self.controllerOne];
+    if (nil != self.controllerTwo) {
+        [self.console connectControllerTwo:self.controllerTwo];
+    }
 }
--(void)controllerDidDisconnect:(NSNotification *)notification
+- (void) controllerDidDisconnect: (NSNotification *) notification
 {
+    // possibile states
+
+    // 1. One controller was connected and is now disconnected
+
+    // 2. two controllers were connected and the second controller is disconnecting
+
+    // 3. two controllers were connected and the first controller is disconnecting
+
+    // 4. two controllers were connected and both controllers are disconnecting
+
+    // 5. inconsistent state
+
+    NSArray * controllers = [GCController controllers];
+    // 1.
+    if (nil == self.controllerTwo && nil != self.controllerOne && controllers.count == 0) {
+        self.controllerOne = nil;
+    }
+    // 2. and 3.
+    else if (nil != self.controllerTwo && nil != self.controllerOne && controllers.count > 0)
+    {
+        self.controllerOne = nil;
+        self.controllerTwo = nil;
+        [self.console connectControllerTwo:nil];
+
+        GCController * gameController = [controllers firstObject];
+        gameController.playerIndex = 0;
+        self.controllerOne = [[CGGameControllerForSNESInterpreter alloc]
+                              initWithController: gameController];
+        [self.console connectControllerOne:self.controllerOne];
+    }
+    // 4.
+    else if (nil != self.controllerTwo && nil != self.controllerOne && controllers.count == 0) {
+        self.controllerOne = nil;
+        self.controllerTwo = nil;
+        [self.console connectControllerTwo:nil];
+    }
+    // 5.
+    else {
+        self.controllerOne = nil;
+        self.controllerTwo = nil;
+        [self.console connectControllerTwo:nil];
+    }
 }
 
 @end
