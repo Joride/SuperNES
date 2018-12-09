@@ -15,7 +15,7 @@ NSString * const cellID = @"cellID";
 
 @interface SNESGameListViewController ()
 <UICollectionViewDataSource,
-UICollectionViewDelegate>
+UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, readonly) NSArray * games;
 @property (nonatomic, strong) UICollectionViewFlowLayout * flowLayout;
@@ -25,6 +25,7 @@ UICollectionViewDelegate>
 
 
 @implementation SNESGameListViewController
+
 @synthesize games = _games;
 @synthesize ROMFileManager = _ROMFileManager;
 -(SNESROMFileManager *)ROMFileManager
@@ -46,13 +47,8 @@ UICollectionViewDelegate>
 
     self.collectionView.collectionViewLayout = _flowLayout;
 
-    NSString * nibName = @"SNESGameCollectionViewCell";
-
-
-    UINib * cellNib = [UINib nibWithNibName: nibName
-                                     bundle: [NSBundle mainBundle]];
-    [self.collectionView registerNib: cellNib
-          forCellWithReuseIdentifier: cellID];
+    [self.collectionView registerClass: [SNESGameCollectionViewCell class]
+            forCellWithReuseIdentifier: cellID];
 
 }
 
@@ -96,6 +92,12 @@ UICollectionViewDelegate>
     return cell;
 }
 #pragma mark - UICOllectionViewDelegate
+-(CGSize)collectionView:(UICollectionView *)collectionView
+                 layout:(UICollectionViewLayout *)collectionViewLayout
+ sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGRectInset([UIScreen mainScreen].bounds, 50, 50).size;
+}
 -(void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {

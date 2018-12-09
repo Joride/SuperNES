@@ -7,6 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2428B5D21BD3C2700874401 /* Battletoads in Battelmania.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428AB721BD3C2600874401 /* Battletoads in Battelmania.smc */; };
+		A2428B5E21BD3C2700874401 /* Mortal Kombat 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428AB821BD3C2600874401 /* Mortal Kombat 2.smc */; };
+		A2428B5F21BD3C2700874401 /* Super Mario World.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428AB921BD3C2600874401 /* Super Mario World.smc */; };
+		A2428B6021BD3C2700874401 /* Mortal Kombat 3.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428ABA21BD3C2600874401 /* Mortal Kombat 3.smc */; };
+		A2428B6121BD3C2700874401 /* The Lion King.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428ABB21BD3C2600874401 /* The Lion King.smc */; };
+		A2428B6221BD3C2700874401 /* Super Mario Kart.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428ABC21BD3C2600874401 /* Super Mario Kart.smc */; };
+		A2428B6321BD3C2700874401 /* Super Mario All-Stars.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428ABD21BD3C2600874401 /* Super Mario All-Stars.smc */; };
+		A2428B6421BD3C2700874401 /* Street Fighter II Turbo.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428ABE21BD3C2600874401 /* Street Fighter II Turbo.smc */; };
+		A2428B6521BD3C2700874401 /* Mortal Kombat.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC021BD3C2600874401 /* Mortal Kombat.png */; };
+		A2428B6621BD3C2700874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC121BD3C2600874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.png */; };
+		A2428B6721BD3C2700874401 /* The Lost Vikings 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC221BD3C2600874401 /* The Lost Vikings 2.png */; };
+		A2428B6821BD3C2700874401 /* Lufia 2- Rise of the sinistrals.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC321BD3C2600874401 /* Lufia 2- Rise of the sinistrals.png */; };
+		A2428B6921BD3C2700874401 /* Super Pinball - Behind the Mask.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC421BD3C2600874401 /* Super Pinball - Behind the Mask.png */; };
+		A2428B6A21BD3C2700874401 /* Super Bomberman 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC521BD3C2600874401 /* Super Bomberman 2.png */; };
+		A2428B6B21BD3C2700874401 /* The Lost Vikings.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC621BD3C2600874401 /* The Lost Vikings.png */; };
+		A2428B6C21BD3C2700874401 /* Super Bomberman.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC721BD3C2600874401 /* Super Bomberman.png */; };
+		A2428B6D21BD3C2700874401 /* Super Mario RPG - Legend of the Seven Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC821BD3C2600874401 /* Super Mario RPG - Legend of the Seven Stars.png */; };
+		A2428B6E21BD3C2700874401 /* Super Bomberman 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AC921BD3C2600874401 /* Super Bomberman 3.png */; };
+		A2428B6F21BD3C2700874401 /* Super Castlevania IV.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428ACA21BD3C2600874401 /* Super Castlevania IV.png */; };
+		A2428B7021BD3C2700874401 /* SNESPlaceHolder.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428ACB21BD3C2600874401 /* SNESPlaceHolder.png */; };
+		A2428B7121BD3C2700874401 /* Star Fox.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428ACC21BD3C2600874401 /* Star Fox.png */; };
+		A2428B7221BD3C2700874401 /* Donkey Kong Country.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428ACD21BD3C2600874401 /* Donkey Kong Country.png */; };
+		A2428B7321BD3C2700874401 /* Mega Man X 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428ACE21BD3C2600874401 /* Mega Man X 3.png */; };
+		A2428B7421BD3C2700874401 /* Castlevania - Dracula X.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428ACF21BD3C2600874401 /* Castlevania - Dracula X.png */; };
+		A2428B7521BD3C2700874401 /* Mega Man X 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD021BD3C2600874401 /* Mega Man X 2.png */; };
+		A2428B7621BD3C2700874401 /* Worms.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD121BD3C2600874401 /* Worms.png */; };
+		A2428B7721BD3C2700874401 /* Killer Instinct.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD221BD3C2600874401 /* Killer Instinct.png */; };
+		A2428B7821BD3C2700874401 /* Boogerman - A pick and flick adventure.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD321BD3C2600874401 /* Boogerman - A pick and flick adventure.png */; };
+		A2428B7921BD3C2700874401 /* Aladdin.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD421BD3C2600874401 /* Aladdin.png */; };
+		A2428B7A21BD3C2700874401 /* Young Merlin.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD521BD3C2600874401 /* Young Merlin.png */; };
+		A2428B7B21BD3C2700874401 /* Harleys Humongous Adventure.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428AD621BD3C2600874401 /* Harleys Humongous Adventure.png */; };
+		A2428BAD21BD3C2700874401 /* Mega Man X.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0921BD3C2600874401 /* Mega Man X.png */; };
+		A2428BAE21BD3C2700874401 /* Doom.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0A21BD3C2600874401 /* Doom.png */; };
+		A2428BAF21BD3C2700874401 /* F-Zero.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0B21BD3C2600874401 /* F-Zero.png */; };
+		A2428BB021BD3C2700874401 /* Cool World.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0C21BD3C2600874401 /* Cool World.png */; };
+		A2428BB121BD3C2700874401 /* Super Mario World 2 - Yoshis Island.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0D21BD3C2600874401 /* Super Mario World 2 - Yoshis Island.png */; };
+		A2428BB221BD3C2800874401 /* Lufia - The fortress of Doom.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0E21BD3C2600874401 /* Lufia - The fortress of Doom.png */; };
+		A2428BB321BD3C2800874401 /* Stunt Race FX.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B0F21BD3C2600874401 /* Stunt Race FX.png */; };
+		A2428BB421BD3C2800874401 /* Yoshis Safari.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1021BD3C2600874401 /* Yoshis Safari.png */; };
+		A2428BB521BD3C2800874401 /* Donkey Kong Country 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1121BD3C2600874401 /* Donkey Kong Country 3.png */; };
+		A2428BB621BD3C2800874401 /* Super Street Fighter 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1221BD3C2600874401 /* Super Street Fighter 2.png */; };
+		A2428BB721BD3C2800874401 /* Super Metroid.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1321BD3C2600874401 /* Super Metroid.png */; };
+		A2428BB821BD3C2800874401 /* The Legend of Zelda - A Link to the Past.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1421BD3C2600874401 /* The Legend of Zelda - A Link to the Past.png */; };
+		A2428BB921BD3C2800874401 /* Wolfenstein 3D.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1521BD3C2600874401 /* Wolfenstein 3D.png */; };
+		A2428BBA21BD3C2800874401 /* Donkey Kong Country 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1621BD3C2600874401 /* Donkey Kong Country 2.png */; };
+		A2428BBB21BD3C2800874401 /* T2 - The Arcade Game.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1721BD3C2600874401 /* T2 - The Arcade Game.png */; };
+		A2428BBC21BD3C2800874401 /* Secret of Mana.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1821BD3C2600874401 /* Secret of Mana.png */; };
+		A2428BBD21BD3C2800874401 /* Bubsy - In claws encounters of the furred kind.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1921BD3C2600874401 /* Bubsy - In claws encounters of the furred kind.png */; };
+		A2428BBE21BD3C2800874401 /* Bubsy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1A21BD3C2600874401 /* Bubsy 2.png */; };
+		A2428BBF21BD3C2800874401 /* The Lion King.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1B21BD3C2600874401 /* The Lion King.png */; };
+		A2428BC021BD3C2800874401 /* Mortal Kombat 2.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1C21BD3C2600874401 /* Mortal Kombat 2.png */; };
+		A2428BC121BD3C2800874401 /* Battletoads in Battelmania.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1D21BD3C2600874401 /* Battletoads in Battelmania.png */; };
+		A2428BC221BD3C2800874401 /* Super Mario World.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1E21BD3C2600874401 /* Super Mario World.png */; };
+		A2428BC321BD3C2800874401 /* Mortal Kombat 3.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B1F21BD3C2600874401 /* Mortal Kombat 3.png */; };
+		A2428BC421BD3C2800874401 /* Super Mario Kart.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2021BD3C2600874401 /* Super Mario Kart.png */; };
+		A2428BC521BD3C2800874401 /* Street Fighter II Turbo.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2121BD3C2600874401 /* Street Fighter II Turbo.png */; };
+		A2428BC621BD3C2800874401 /* Super Mario All-Stars.png in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2221BD3C2600874401 /* Super Mario All-Stars.png */; };
+		A2428BC721BD3C2800874401 /* Donkey Kong Country 3.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2321BD3C2600874401 /* Donkey Kong Country 3.smc */; };
+		A2428BC821BD3C2800874401 /* Super Street Fighter 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2421BD3C2600874401 /* Super Street Fighter 2.smc */; };
+		A2428BC921BD3C2800874401 /* Super Metroid.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2521BD3C2600874401 /* Super Metroid.smc */; };
+		A2428BCA21BD3C2800874401 /* Wolfenstein 3D.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2621BD3C2600874401 /* Wolfenstein 3D.smc */; };
+		A2428BCB21BD3C2800874401 /* The Legend of Zelda - A Link to the Past.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2721BD3C2600874401 /* The Legend of Zelda - A Link to the Past.smc */; };
+		A2428BCC21BD3C2800874401 /* Donkey Kong Country 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2821BD3C2600874401 /* Donkey Kong Country 2.smc */; };
+		A2428BCD21BD3C2800874401 /* Stunt Race FX.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2921BD3C2600874401 /* Stunt Race FX.smc */; };
+		A2428BCE21BD3C2800874401 /* Yoshis Safari.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2A21BD3C2600874401 /* Yoshis Safari.smc */; };
+		A2428BCF21BD3C2800874401 /* Bubsy - In claws encounters of the furred kind.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2B21BD3C2600874401 /* Bubsy - In claws encounters of the furred kind.smc */; };
+		A2428BD021BD3C2800874401 /* Bubsy 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2C21BD3C2600874401 /* Bubsy 2.smc */; };
+		A2428BD121BD3C2800874401 /* T2 - The Arcade Game.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2D21BD3C2600874401 /* T2 - The Arcade Game.smc */; };
+		A2428BD221BD3C2800874401 /* Secret of Mana.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2E21BD3C2600874401 /* Secret of Mana.smc */; };
+		A2428BD321BD3C2800874401 /* Harleys Humongous Adventure.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B2F21BD3C2600874401 /* Harleys Humongous Adventure.smc */; };
+		A2428BD421BD3C2800874401 /* Killer Instinct.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3021BD3C2600874401 /* Killer Instinct.smc */; };
+		A2428BD521BD3C2800874401 /* Boogerman - A pick and flick adventure.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3121BD3C2600874401 /* Boogerman - A pick and flick adventure.smc */; };
+		A2428BD621BD3C2800874401 /* Young Merlin.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3221BD3C2600874401 /* Young Merlin.smc */; };
+		A2428BD721BD3C2800874401 /* Aladdin.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3321BD3C2600874401 /* Aladdin.smc */; };
+		A2428BD821BD3C2800874401 /* Super Mario World 2 - Yoshis Island.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3421BD3C2600874401 /* Super Mario World 2 - Yoshis Island.smc */; };
+		A2428BD921BD3C2800874401 /* Lufia - The fortress of Doom.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3521BD3C2600874401 /* Lufia - The fortress of Doom.smc */; };
+		A2428BDA21BD3C2800874401 /* Mega Man X.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3621BD3C2600874401 /* Mega Man X.smc */; };
+		A2428BDB21BD3C2800874401 /* F-Zero.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3721BD3C2600874401 /* F-Zero.smc */; };
+		A2428BDC21BD3C2800874401 /* Doom.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3821BD3C2600874401 /* Doom.smc */; };
+		A2428BDD21BD3C2800874401 /* Cool World.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3921BD3C2600874401 /* Cool World.smc */; };
+		A2428BDE21BD3C2800874401 /* Super Bomberman 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3A21BD3C2600874401 /* Super Bomberman 2.smc */; };
+		A2428BDF21BD3C2800874401 /* Lufia 2- Rise of the sinistrals.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3B21BD3C2600874401 /* Lufia 2- Rise of the sinistrals.smc */; };
+		A2428BE021BD3C2800874401 /* Super Pinball - Behind the Mask.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3C21BD3C2600874401 /* Super Pinball - Behind the Mask.smc */; };
+		A2428BE121BD3C2800874401 /* Super Bomberman.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3D21BD3C2600874401 /* Super Bomberman.smc */; };
+		A2428BE221BD3C2800874401 /* The Lost Vikings.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3E21BD3C2600874401 /* The Lost Vikings.smc */; };
+		A2428BE321BD3C2800874401 /* Super Castlevania IV.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B3F21BD3C2600874401 /* Super Castlevania IV.smc */; };
+		A2428BE421BD3C2800874401 /* Super Bomberman 3.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B4021BD3C2600874401 /* Super Bomberman 3.smc */; };
+		A2428BE521BD3C2800874401 /* Mortal Kombat.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B4121BD3C2600874401 /* Mortal Kombat.smc */; };
+		A2428BE621BD3C2800874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B4221BD3C2600874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.smc */; };
+		A2428BE721BD3C2800874401 /* The Lost Vikings 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B4321BD3C2600874401 /* The Lost Vikings 2.smc */; };
+		A2428BE821BD3C2800874401 /* Mega Man X 3.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B4421BD3C2600874401 /* Mega Man X 3.smc */; };
+		A2428BFB21BD3C2800874401 /* Castlevania - Dracula X.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5821BD3C2600874401 /* Castlevania - Dracula X.smc */; };
+		A2428BFC21BD3C2800874401 /* Worms.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5921BD3C2600874401 /* Worms.smc */; };
+		A2428BFD21BD3C2800874401 /* Mega Man X 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5A21BD3C2600874401 /* Mega Man X 2.smc */; };
+		A2428BFE21BD3C2800874401 /* Star Fox.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5B21BD3C2600874401 /* Star Fox.smc */; };
+		A2428BFF21BD3C2800874401 /* Donkey Kong Country.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5C21BD3C2600874401 /* Donkey Kong Country.smc */; };
 		A27B50B31BA60D04002904F6 /* SNES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; };
 		A27B50B41BA60D04002904F6 /* SNES.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A27B50B81BA60D10002904F6 /* SNES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; };
@@ -27,10 +123,8 @@
 		A2F20C061BA5C5420055FE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C031BA5C5420055FE0D /* main.m */; };
 		A2F20C071BA5C5420055FE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C031BA5C5420055FE0D /* main.m */; };
 		A2F20C111BA5C8570055FE0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C0A1BA5C8570055FE0D /* Main.storyboard */; };
-		A2F20C121BA5C8570055FE0D /* SNESGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C0B1BA5C8570055FE0D /* SNESGameCollectionViewCell.xib */; };
 		A2F20C131BA5C8570055FE0D /* SNESGamePlayViewController_tvos.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F20C0D1BA5C8570055FE0D /* SNESGamePlayViewController_tvos.m */; };
 		A2F20C141BA5C8570055FE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C0F1BA5C8570055FE0D /* Assets.xcassets */; };
-		A2F20C151BA5C8570055FE0D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C101BA5C8570055FE0D /* Info.plist */; };
 		A2F20C331BA5C88B0055FE0D /* SNES-DPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C191BA5C88B0055FE0D /* SNES-DPad@2x.png */; };
 		A2F20C341BA5C88B0055FE0D /* SNESFireButtons@2x original.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C1A1BA5C88B0055FE0D /* SNESFireButtons@2x original.png */; };
 		A2F20C351BA5C88B0055FE0D /* SNESFireButtons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2F20C1B1BA5C88B0055FE0D /* SNESFireButtons@2x.png */; };
@@ -116,6 +210,102 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A2428AB721BD3C2600874401 /* Battletoads in Battelmania.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Battletoads in Battelmania.smc"; sourceTree = "<group>"; };
+		A2428AB821BD3C2600874401 /* Mortal Kombat 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mortal Kombat 2.smc"; sourceTree = "<group>"; };
+		A2428AB921BD3C2600874401 /* Super Mario World.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Mario World.smc"; sourceTree = "<group>"; };
+		A2428ABA21BD3C2600874401 /* Mortal Kombat 3.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mortal Kombat 3.smc"; sourceTree = "<group>"; };
+		A2428ABB21BD3C2600874401 /* The Lion King.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Lion King.smc"; sourceTree = "<group>"; };
+		A2428ABC21BD3C2600874401 /* Super Mario Kart.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Mario Kart.smc"; sourceTree = "<group>"; };
+		A2428ABD21BD3C2600874401 /* Super Mario All-Stars.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Mario All-Stars.smc"; sourceTree = "<group>"; };
+		A2428ABE21BD3C2600874401 /* Street Fighter II Turbo.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Street Fighter II Turbo.smc"; sourceTree = "<group>"; };
+		A2428AC021BD3C2600874401 /* Mortal Kombat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mortal Kombat.png"; sourceTree = "<group>"; };
+		A2428AC121BD3C2600874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Teenage Mutant Hero Turtles IV - Turtles in Time.png"; sourceTree = "<group>"; };
+		A2428AC221BD3C2600874401 /* The Lost Vikings 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Lost Vikings 2.png"; sourceTree = "<group>"; };
+		A2428AC321BD3C2600874401 /* Lufia 2- Rise of the sinistrals.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lufia 2- Rise of the sinistrals.png"; sourceTree = "<group>"; };
+		A2428AC421BD3C2600874401 /* Super Pinball - Behind the Mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Pinball - Behind the Mask.png"; sourceTree = "<group>"; };
+		A2428AC521BD3C2600874401 /* Super Bomberman 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Bomberman 2.png"; sourceTree = "<group>"; };
+		A2428AC621BD3C2600874401 /* The Lost Vikings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Lost Vikings.png"; sourceTree = "<group>"; };
+		A2428AC721BD3C2600874401 /* Super Bomberman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Bomberman.png"; sourceTree = "<group>"; };
+		A2428AC821BD3C2600874401 /* Super Mario RPG - Legend of the Seven Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Mario RPG - Legend of the Seven Stars.png"; sourceTree = "<group>"; };
+		A2428AC921BD3C2600874401 /* Super Bomberman 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Bomberman 3.png"; sourceTree = "<group>"; };
+		A2428ACA21BD3C2600874401 /* Super Castlevania IV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Castlevania IV.png"; sourceTree = "<group>"; };
+		A2428ACB21BD3C2600874401 /* SNESPlaceHolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SNESPlaceHolder.png; sourceTree = "<group>"; };
+		A2428ACC21BD3C2600874401 /* Star Fox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star Fox.png"; sourceTree = "<group>"; };
+		A2428ACD21BD3C2600874401 /* Donkey Kong Country.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Donkey Kong Country.png"; sourceTree = "<group>"; };
+		A2428ACE21BD3C2600874401 /* Mega Man X 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mega Man X 3.png"; sourceTree = "<group>"; };
+		A2428ACF21BD3C2600874401 /* Castlevania - Dracula X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Castlevania - Dracula X.png"; sourceTree = "<group>"; };
+		A2428AD021BD3C2600874401 /* Mega Man X 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mega Man X 2.png"; sourceTree = "<group>"; };
+		A2428AD121BD3C2600874401 /* Worms.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Worms.png; sourceTree = "<group>"; };
+		A2428AD221BD3C2600874401 /* Killer Instinct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Killer Instinct.png"; sourceTree = "<group>"; };
+		A2428AD321BD3C2600874401 /* Boogerman - A pick and flick adventure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Boogerman - A pick and flick adventure.png"; sourceTree = "<group>"; };
+		A2428AD421BD3C2600874401 /* Aladdin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aladdin.png; sourceTree = "<group>"; };
+		A2428AD521BD3C2600874401 /* Young Merlin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Young Merlin.png"; sourceTree = "<group>"; };
+		A2428AD621BD3C2600874401 /* Harleys Humongous Adventure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Harleys Humongous Adventure.png"; sourceTree = "<group>"; };
+		A2428B0921BD3C2600874401 /* Mega Man X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mega Man X.png"; sourceTree = "<group>"; };
+		A2428B0A21BD3C2600874401 /* Doom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doom.png; sourceTree = "<group>"; };
+		A2428B0B21BD3C2600874401 /* F-Zero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "F-Zero.png"; sourceTree = "<group>"; };
+		A2428B0C21BD3C2600874401 /* Cool World.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cool World.png"; sourceTree = "<group>"; };
+		A2428B0D21BD3C2600874401 /* Super Mario World 2 - Yoshis Island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Mario World 2 - Yoshis Island.png"; sourceTree = "<group>"; };
+		A2428B0E21BD3C2600874401 /* Lufia - The fortress of Doom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lufia - The fortress of Doom.png"; sourceTree = "<group>"; };
+		A2428B0F21BD3C2600874401 /* Stunt Race FX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stunt Race FX.png"; sourceTree = "<group>"; };
+		A2428B1021BD3C2600874401 /* Yoshis Safari.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Yoshis Safari.png"; sourceTree = "<group>"; };
+		A2428B1121BD3C2600874401 /* Donkey Kong Country 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Donkey Kong Country 3.png"; sourceTree = "<group>"; };
+		A2428B1221BD3C2600874401 /* Super Street Fighter 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Street Fighter 2.png"; sourceTree = "<group>"; };
+		A2428B1321BD3C2600874401 /* Super Metroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Metroid.png"; sourceTree = "<group>"; };
+		A2428B1421BD3C2600874401 /* The Legend of Zelda - A Link to the Past.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Legend of Zelda - A Link to the Past.png"; sourceTree = "<group>"; };
+		A2428B1521BD3C2600874401 /* Wolfenstein 3D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wolfenstein 3D.png"; sourceTree = "<group>"; };
+		A2428B1621BD3C2600874401 /* Donkey Kong Country 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Donkey Kong Country 2.png"; sourceTree = "<group>"; };
+		A2428B1721BD3C2600874401 /* T2 - The Arcade Game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T2 - The Arcade Game.png"; sourceTree = "<group>"; };
+		A2428B1821BD3C2600874401 /* Secret of Mana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Secret of Mana.png"; sourceTree = "<group>"; };
+		A2428B1921BD3C2600874401 /* Bubsy - In claws encounters of the furred kind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bubsy - In claws encounters of the furred kind.png"; sourceTree = "<group>"; };
+		A2428B1A21BD3C2600874401 /* Bubsy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bubsy 2.png"; sourceTree = "<group>"; };
+		A2428B1B21BD3C2600874401 /* The Lion King.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "The Lion King.png"; sourceTree = "<group>"; };
+		A2428B1C21BD3C2600874401 /* Mortal Kombat 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mortal Kombat 2.png"; sourceTree = "<group>"; };
+		A2428B1D21BD3C2600874401 /* Battletoads in Battelmania.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Battletoads in Battelmania.png"; sourceTree = "<group>"; };
+		A2428B1E21BD3C2600874401 /* Super Mario World.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Mario World.png"; sourceTree = "<group>"; };
+		A2428B1F21BD3C2600874401 /* Mortal Kombat 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mortal Kombat 3.png"; sourceTree = "<group>"; };
+		A2428B2021BD3C2600874401 /* Super Mario Kart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Mario Kart.png"; sourceTree = "<group>"; };
+		A2428B2121BD3C2600874401 /* Street Fighter II Turbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Street Fighter II Turbo.png"; sourceTree = "<group>"; };
+		A2428B2221BD3C2600874401 /* Super Mario All-Stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Super Mario All-Stars.png"; sourceTree = "<group>"; };
+		A2428B2321BD3C2600874401 /* Donkey Kong Country 3.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Donkey Kong Country 3.smc"; sourceTree = "<group>"; };
+		A2428B2421BD3C2600874401 /* Super Street Fighter 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Street Fighter 2.smc"; sourceTree = "<group>"; };
+		A2428B2521BD3C2600874401 /* Super Metroid.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Metroid.smc"; sourceTree = "<group>"; };
+		A2428B2621BD3C2600874401 /* Wolfenstein 3D.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wolfenstein 3D.smc"; sourceTree = "<group>"; };
+		A2428B2721BD3C2600874401 /* The Legend of Zelda - A Link to the Past.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Legend of Zelda - A Link to the Past.smc"; sourceTree = "<group>"; };
+		A2428B2821BD3C2600874401 /* Donkey Kong Country 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Donkey Kong Country 2.smc"; sourceTree = "<group>"; };
+		A2428B2921BD3C2600874401 /* Stunt Race FX.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Stunt Race FX.smc"; sourceTree = "<group>"; };
+		A2428B2A21BD3C2600874401 /* Yoshis Safari.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yoshis Safari.smc"; sourceTree = "<group>"; };
+		A2428B2B21BD3C2600874401 /* Bubsy - In claws encounters of the furred kind.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubsy - In claws encounters of the furred kind.smc"; sourceTree = "<group>"; };
+		A2428B2C21BD3C2600874401 /* Bubsy 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubsy 2.smc"; sourceTree = "<group>"; };
+		A2428B2D21BD3C2600874401 /* T2 - The Arcade Game.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "T2 - The Arcade Game.smc"; sourceTree = "<group>"; };
+		A2428B2E21BD3C2600874401 /* Secret of Mana.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Secret of Mana.smc"; sourceTree = "<group>"; };
+		A2428B2F21BD3C2600874401 /* Harleys Humongous Adventure.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Harleys Humongous Adventure.smc"; sourceTree = "<group>"; };
+		A2428B3021BD3C2600874401 /* Killer Instinct.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Killer Instinct.smc"; sourceTree = "<group>"; };
+		A2428B3121BD3C2600874401 /* Boogerman - A pick and flick adventure.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Boogerman - A pick and flick adventure.smc"; sourceTree = "<group>"; };
+		A2428B3221BD3C2600874401 /* Young Merlin.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Young Merlin.smc"; sourceTree = "<group>"; };
+		A2428B3321BD3C2600874401 /* Aladdin.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aladdin.smc; sourceTree = "<group>"; };
+		A2428B3421BD3C2600874401 /* Super Mario World 2 - Yoshis Island.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Mario World 2 - Yoshis Island.smc"; sourceTree = "<group>"; };
+		A2428B3521BD3C2600874401 /* Lufia - The fortress of Doom.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lufia - The fortress of Doom.smc"; sourceTree = "<group>"; };
+		A2428B3621BD3C2600874401 /* Mega Man X.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mega Man X.smc"; sourceTree = "<group>"; };
+		A2428B3721BD3C2600874401 /* F-Zero.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "F-Zero.smc"; sourceTree = "<group>"; };
+		A2428B3821BD3C2600874401 /* Doom.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Doom.smc; sourceTree = "<group>"; };
+		A2428B3921BD3C2600874401 /* Cool World.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cool World.smc"; sourceTree = "<group>"; };
+		A2428B3A21BD3C2600874401 /* Super Bomberman 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Bomberman 2.smc"; sourceTree = "<group>"; };
+		A2428B3B21BD3C2600874401 /* Lufia 2- Rise of the sinistrals.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lufia 2- Rise of the sinistrals.smc"; sourceTree = "<group>"; };
+		A2428B3C21BD3C2600874401 /* Super Pinball - Behind the Mask.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Pinball - Behind the Mask.smc"; sourceTree = "<group>"; };
+		A2428B3D21BD3C2600874401 /* Super Bomberman.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Bomberman.smc"; sourceTree = "<group>"; };
+		A2428B3E21BD3C2600874401 /* The Lost Vikings.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Lost Vikings.smc"; sourceTree = "<group>"; };
+		A2428B3F21BD3C2600874401 /* Super Castlevania IV.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Castlevania IV.smc"; sourceTree = "<group>"; };
+		A2428B4021BD3C2600874401 /* Super Bomberman 3.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Super Bomberman 3.smc"; sourceTree = "<group>"; };
+		A2428B4121BD3C2600874401 /* Mortal Kombat.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mortal Kombat.smc"; sourceTree = "<group>"; };
+		A2428B4221BD3C2600874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Teenage Mutant Hero Turtles IV - Turtles in Time.smc"; sourceTree = "<group>"; };
+		A2428B4321BD3C2600874401 /* The Lost Vikings 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "The Lost Vikings 2.smc"; sourceTree = "<group>"; };
+		A2428B4421BD3C2600874401 /* Mega Man X 3.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mega Man X 3.smc"; sourceTree = "<group>"; };
+		A2428B5821BD3C2600874401 /* Castlevania - Dracula X.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Castlevania - Dracula X.smc"; sourceTree = "<group>"; };
+		A2428B5921BD3C2600874401 /* Worms.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Worms.smc; sourceTree = "<group>"; };
+		A2428B5A21BD3C2600874401 /* Mega Man X 2.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mega Man X 2.smc"; sourceTree = "<group>"; };
+		A2428B5B21BD3C2600874401 /* Star Fox.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Star Fox.smc"; sourceTree = "<group>"; };
+		A2428B5C21BD3C2600874401 /* Donkey Kong Country.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Donkey Kong Country.smc"; sourceTree = "<group>"; };
 		A24396841BA5A57B0010D26A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		A26BD21F1BA1F011008EC2B9 /* SuperNES-TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperNES-TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26BD2941BA1FED8008EC2B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
@@ -136,7 +326,6 @@
 		A2F20C041BA5C5420055FE0D /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = "iOS/Supporting Files/Prefix.pch"; sourceTree = "<group>"; };
 		A2F20C051BA5C5420055FE0D /* SuperNES-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SuperNES-Bridging-Header.h"; path = "iOS/Supporting Files/SuperNES-Bridging-Header.h"; sourceTree = "<group>"; };
 		A2F20C0A1BA5C8570055FE0D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		A2F20C0B1BA5C8570055FE0D /* SNESGameCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNESGameCollectionViewCell.xib; sourceTree = "<group>"; };
 		A2F20C0C1BA5C8570055FE0D /* SNESGamePlayViewController_tvos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNESGamePlayViewController_tvos.h; sourceTree = "<group>"; };
 		A2F20C0D1BA5C8570055FE0D /* SNESGamePlayViewController_tvos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNESGamePlayViewController_tvos.m; sourceTree = "<group>"; };
 		A2F20C0F1BA5C8570055FE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -200,6 +389,117 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2428AB621BD3C2600874401 /* ROMs */ = {
+			isa = PBXGroup;
+			children = (
+				A2428ABF21BD3C2600874401 /* images */,
+				A2428AB721BD3C2600874401 /* Battletoads in Battelmania.smc */,
+				A2428AB821BD3C2600874401 /* Mortal Kombat 2.smc */,
+				A2428AB921BD3C2600874401 /* Super Mario World.smc */,
+				A2428ABA21BD3C2600874401 /* Mortal Kombat 3.smc */,
+				A2428ABB21BD3C2600874401 /* The Lion King.smc */,
+				A2428ABC21BD3C2600874401 /* Super Mario Kart.smc */,
+				A2428ABD21BD3C2600874401 /* Super Mario All-Stars.smc */,
+				A2428ABE21BD3C2600874401 /* Street Fighter II Turbo.smc */,
+				A2428B2321BD3C2600874401 /* Donkey Kong Country 3.smc */,
+				A2428B2421BD3C2600874401 /* Super Street Fighter 2.smc */,
+				A2428B2521BD3C2600874401 /* Super Metroid.smc */,
+				A2428B2621BD3C2600874401 /* Wolfenstein 3D.smc */,
+				A2428B2721BD3C2600874401 /* The Legend of Zelda - A Link to the Past.smc */,
+				A2428B2821BD3C2600874401 /* Donkey Kong Country 2.smc */,
+				A2428B2921BD3C2600874401 /* Stunt Race FX.smc */,
+				A2428B2A21BD3C2600874401 /* Yoshis Safari.smc */,
+				A2428B2B21BD3C2600874401 /* Bubsy - In claws encounters of the furred kind.smc */,
+				A2428B2C21BD3C2600874401 /* Bubsy 2.smc */,
+				A2428B2D21BD3C2600874401 /* T2 - The Arcade Game.smc */,
+				A2428B2E21BD3C2600874401 /* Secret of Mana.smc */,
+				A2428B2F21BD3C2600874401 /* Harleys Humongous Adventure.smc */,
+				A2428B3021BD3C2600874401 /* Killer Instinct.smc */,
+				A2428B3121BD3C2600874401 /* Boogerman - A pick and flick adventure.smc */,
+				A2428B3221BD3C2600874401 /* Young Merlin.smc */,
+				A2428B3321BD3C2600874401 /* Aladdin.smc */,
+				A2428B3421BD3C2600874401 /* Super Mario World 2 - Yoshis Island.smc */,
+				A2428B3521BD3C2600874401 /* Lufia - The fortress of Doom.smc */,
+				A2428B3621BD3C2600874401 /* Mega Man X.smc */,
+				A2428B3721BD3C2600874401 /* F-Zero.smc */,
+				A2428B3821BD3C2600874401 /* Doom.smc */,
+				A2428B3921BD3C2600874401 /* Cool World.smc */,
+				A2428B3A21BD3C2600874401 /* Super Bomberman 2.smc */,
+				A2428B3B21BD3C2600874401 /* Lufia 2- Rise of the sinistrals.smc */,
+				A2428B3C21BD3C2600874401 /* Super Pinball - Behind the Mask.smc */,
+				A2428B3D21BD3C2600874401 /* Super Bomberman.smc */,
+				A2428B3E21BD3C2600874401 /* The Lost Vikings.smc */,
+				A2428B3F21BD3C2600874401 /* Super Castlevania IV.smc */,
+				A2428B4021BD3C2600874401 /* Super Bomberman 3.smc */,
+				A2428B4121BD3C2600874401 /* Mortal Kombat.smc */,
+				A2428B4221BD3C2600874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.smc */,
+				A2428B4321BD3C2600874401 /* The Lost Vikings 2.smc */,
+				A2428B4421BD3C2600874401 /* Mega Man X 3.smc */,
+				A2428B5821BD3C2600874401 /* Castlevania - Dracula X.smc */,
+				A2428B5921BD3C2600874401 /* Worms.smc */,
+				A2428B5A21BD3C2600874401 /* Mega Man X 2.smc */,
+				A2428B5B21BD3C2600874401 /* Star Fox.smc */,
+				A2428B5C21BD3C2600874401 /* Donkey Kong Country.smc */,
+			);
+			path = ROMs;
+			sourceTree = "<group>";
+		};
+		A2428ABF21BD3C2600874401 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A2428AC021BD3C2600874401 /* Mortal Kombat.png */,
+				A2428AC121BD3C2600874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.png */,
+				A2428AC221BD3C2600874401 /* The Lost Vikings 2.png */,
+				A2428AC321BD3C2600874401 /* Lufia 2- Rise of the sinistrals.png */,
+				A2428AC421BD3C2600874401 /* Super Pinball - Behind the Mask.png */,
+				A2428AC521BD3C2600874401 /* Super Bomberman 2.png */,
+				A2428AC621BD3C2600874401 /* The Lost Vikings.png */,
+				A2428AC721BD3C2600874401 /* Super Bomberman.png */,
+				A2428AC821BD3C2600874401 /* Super Mario RPG - Legend of the Seven Stars.png */,
+				A2428AC921BD3C2600874401 /* Super Bomberman 3.png */,
+				A2428ACA21BD3C2600874401 /* Super Castlevania IV.png */,
+				A2428ACB21BD3C2600874401 /* SNESPlaceHolder.png */,
+				A2428ACC21BD3C2600874401 /* Star Fox.png */,
+				A2428ACD21BD3C2600874401 /* Donkey Kong Country.png */,
+				A2428ACE21BD3C2600874401 /* Mega Man X 3.png */,
+				A2428ACF21BD3C2600874401 /* Castlevania - Dracula X.png */,
+				A2428AD021BD3C2600874401 /* Mega Man X 2.png */,
+				A2428AD121BD3C2600874401 /* Worms.png */,
+				A2428AD221BD3C2600874401 /* Killer Instinct.png */,
+				A2428AD321BD3C2600874401 /* Boogerman - A pick and flick adventure.png */,
+				A2428AD421BD3C2600874401 /* Aladdin.png */,
+				A2428AD521BD3C2600874401 /* Young Merlin.png */,
+				A2428AD621BD3C2600874401 /* Harleys Humongous Adventure.png */,
+				A2428B0921BD3C2600874401 /* Mega Man X.png */,
+				A2428B0A21BD3C2600874401 /* Doom.png */,
+				A2428B0B21BD3C2600874401 /* F-Zero.png */,
+				A2428B0C21BD3C2600874401 /* Cool World.png */,
+				A2428B0D21BD3C2600874401 /* Super Mario World 2 - Yoshis Island.png */,
+				A2428B0E21BD3C2600874401 /* Lufia - The fortress of Doom.png */,
+				A2428B0F21BD3C2600874401 /* Stunt Race FX.png */,
+				A2428B1021BD3C2600874401 /* Yoshis Safari.png */,
+				A2428B1121BD3C2600874401 /* Donkey Kong Country 3.png */,
+				A2428B1221BD3C2600874401 /* Super Street Fighter 2.png */,
+				A2428B1321BD3C2600874401 /* Super Metroid.png */,
+				A2428B1421BD3C2600874401 /* The Legend of Zelda - A Link to the Past.png */,
+				A2428B1521BD3C2600874401 /* Wolfenstein 3D.png */,
+				A2428B1621BD3C2600874401 /* Donkey Kong Country 2.png */,
+				A2428B1721BD3C2600874401 /* T2 - The Arcade Game.png */,
+				A2428B1821BD3C2600874401 /* Secret of Mana.png */,
+				A2428B1921BD3C2600874401 /* Bubsy - In claws encounters of the furred kind.png */,
+				A2428B1A21BD3C2600874401 /* Bubsy 2.png */,
+				A2428B1B21BD3C2600874401 /* The Lion King.png */,
+				A2428B1C21BD3C2600874401 /* Mortal Kombat 2.png */,
+				A2428B1D21BD3C2600874401 /* Battletoads in Battelmania.png */,
+				A2428B1E21BD3C2600874401 /* Super Mario World.png */,
+				A2428B1F21BD3C2600874401 /* Mortal Kombat 3.png */,
+				A2428B2021BD3C2600874401 /* Super Mario Kart.png */,
+				A2428B2121BD3C2600874401 /* Street Fighter II Turbo.png */,
+				A2428B2221BD3C2600874401 /* Super Mario All-Stars.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		A24396861BA5A5B90010D26A /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +551,7 @@
 		A2F20C081BA5C8570055FE0D /* SuperNES-TV */ = {
 			isa = PBXGroup;
 			children = (
+				A2428AB621BD3C2600874401 /* ROMs */,
 				A2F20C091BA5C8570055FE0D /* src */,
 				A2F20C0E1BA5C8570055FE0D /* Supporting Files */,
 			);
@@ -262,7 +563,6 @@
 			isa = PBXGroup;
 			children = (
 				A2F20C0A1BA5C8570055FE0D /* Main.storyboard */,
-				A2F20C0B1BA5C8570055FE0D /* SNESGameCollectionViewCell.xib */,
 				A2F20C0C1BA5C8570055FE0D /* SNESGamePlayViewController_tvos.h */,
 				A2F20C0D1BA5C8570055FE0D /* SNESGamePlayViewController_tvos.m */,
 			);
@@ -549,10 +849,104 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2428B7A21BD3C2700874401 /* Young Merlin.png in Resources */,
+				A2428BB721BD3C2800874401 /* Super Metroid.png in Resources */,
+				A2428BB321BD3C2800874401 /* Stunt Race FX.png in Resources */,
+				A2428B7821BD3C2700874401 /* Boogerman - A pick and flick adventure.png in Resources */,
+				A2428BDD21BD3C2800874401 /* Cool World.smc in Resources */,
+				A2428BAD21BD3C2700874401 /* Mega Man X.png in Resources */,
+				A2428B7621BD3C2700874401 /* Worms.png in Resources */,
+				A2428B7721BD3C2700874401 /* Killer Instinct.png in Resources */,
+				A2428BC221BD3C2800874401 /* Super Mario World.png in Resources */,
+				A2428B5E21BD3C2700874401 /* Mortal Kombat 2.smc in Resources */,
+				A2428B6B21BD3C2700874401 /* The Lost Vikings.png in Resources */,
+				A2428BFB21BD3C2800874401 /* Castlevania - Dracula X.smc in Resources */,
+				A2428BB621BD3C2800874401 /* Super Street Fighter 2.png in Resources */,
+				A2428B6721BD3C2700874401 /* The Lost Vikings 2.png in Resources */,
+				A2428BE221BD3C2800874401 /* The Lost Vikings.smc in Resources */,
+				A2428B6621BD3C2700874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.png in Resources */,
+				A2428BCB21BD3C2800874401 /* The Legend of Zelda - A Link to the Past.smc in Resources */,
+				A2428B7321BD3C2700874401 /* Mega Man X 3.png in Resources */,
+				A2428BD921BD3C2800874401 /* Lufia - The fortress of Doom.smc in Resources */,
+				A2428B6921BD3C2700874401 /* Super Pinball - Behind the Mask.png in Resources */,
+				A2428B6221BD3C2700874401 /* Super Mario Kart.smc in Resources */,
+				A2428BBC21BD3C2800874401 /* Secret of Mana.png in Resources */,
+				A2428BE721BD3C2800874401 /* The Lost Vikings 2.smc in Resources */,
+				A2428B6F21BD3C2700874401 /* Super Castlevania IV.png in Resources */,
+				A2428B7921BD3C2700874401 /* Aladdin.png in Resources */,
+				A2428BBB21BD3C2800874401 /* T2 - The Arcade Game.png in Resources */,
+				A2428BAF21BD3C2700874401 /* F-Zero.png in Resources */,
+				A2428BFE21BD3C2800874401 /* Star Fox.smc in Resources */,
+				A2428BB021BD3C2700874401 /* Cool World.png in Resources */,
+				A2428BFC21BD3C2800874401 /* Worms.smc in Resources */,
+				A2428B6D21BD3C2700874401 /* Super Mario RPG - Legend of the Seven Stars.png in Resources */,
+				A2428BCD21BD3C2800874401 /* Stunt Race FX.smc in Resources */,
+				A2428BC321BD3C2800874401 /* Mortal Kombat 3.png in Resources */,
+				A2428BDA21BD3C2800874401 /* Mega Man X.smc in Resources */,
+				A2428BB521BD3C2800874401 /* Donkey Kong Country 3.png in Resources */,
+				A2428BC121BD3C2800874401 /* Battletoads in Battelmania.png in Resources */,
+				A2428BD121BD3C2800874401 /* T2 - The Arcade Game.smc in Resources */,
+				A2428BFF21BD3C2800874401 /* Donkey Kong Country.smc in Resources */,
+				A2428BB421BD3C2800874401 /* Yoshis Safari.png in Resources */,
+				A2428BE121BD3C2800874401 /* Super Bomberman.smc in Resources */,
+				A2428B6021BD3C2700874401 /* Mortal Kombat 3.smc in Resources */,
+				A2428BCA21BD3C2800874401 /* Wolfenstein 3D.smc in Resources */,
+				A2428B5F21BD3C2700874401 /* Super Mario World.smc in Resources */,
+				A2428BB821BD3C2800874401 /* The Legend of Zelda - A Link to the Past.png in Resources */,
+				A2428BE521BD3C2800874401 /* Mortal Kombat.smc in Resources */,
+				A2428BC521BD3C2800874401 /* Street Fighter II Turbo.png in Resources */,
+				A2428BD821BD3C2800874401 /* Super Mario World 2 - Yoshis Island.smc in Resources */,
+				A2428B7521BD3C2700874401 /* Mega Man X 2.png in Resources */,
 				A2F20C111BA5C8570055FE0D /* Main.storyboard in Resources */,
+				A2428BD321BD3C2800874401 /* Harleys Humongous Adventure.smc in Resources */,
+				A2428B6521BD3C2700874401 /* Mortal Kombat.png in Resources */,
+				A2428B6C21BD3C2700874401 /* Super Bomberman.png in Resources */,
+				A2428BDC21BD3C2800874401 /* Doom.smc in Resources */,
+				A2428BD221BD3C2800874401 /* Secret of Mana.smc in Resources */,
+				A2428BD421BD3C2800874401 /* Killer Instinct.smc in Resources */,
+				A2428BE321BD3C2800874401 /* Super Castlevania IV.smc in Resources */,
+				A2428BE021BD3C2800874401 /* Super Pinball - Behind the Mask.smc in Resources */,
+				A2428BCC21BD3C2800874401 /* Donkey Kong Country 2.smc in Resources */,
+				A2428B6A21BD3C2700874401 /* Super Bomberman 2.png in Resources */,
+				A2428BCF21BD3C2800874401 /* Bubsy - In claws encounters of the furred kind.smc in Resources */,
+				A2428BC821BD3C2800874401 /* Super Street Fighter 2.smc in Resources */,
+				A2428BC021BD3C2800874401 /* Mortal Kombat 2.png in Resources */,
+				A2428BAE21BD3C2700874401 /* Doom.png in Resources */,
+				A2428BD621BD3C2800874401 /* Young Merlin.smc in Resources */,
+				A2428B7B21BD3C2700874401 /* Harleys Humongous Adventure.png in Resources */,
+				A2428BD021BD3C2800874401 /* Bubsy 2.smc in Resources */,
+				A2428BE621BD3C2800874401 /* Teenage Mutant Hero Turtles IV - Turtles in Time.smc in Resources */,
+				A2428B7121BD3C2700874401 /* Star Fox.png in Resources */,
+				A2428BD521BD3C2800874401 /* Boogerman - A pick and flick adventure.smc in Resources */,
+				A2428BC721BD3C2800874401 /* Donkey Kong Country 3.smc in Resources */,
+				A2428BDE21BD3C2800874401 /* Super Bomberman 2.smc in Resources */,
+				A2428BB121BD3C2700874401 /* Super Mario World 2 - Yoshis Island.png in Resources */,
+				A2428BE821BD3C2800874401 /* Mega Man X 3.smc in Resources */,
+				A2428BB921BD3C2800874401 /* Wolfenstein 3D.png in Resources */,
+				A2428B7021BD3C2700874401 /* SNESPlaceHolder.png in Resources */,
+				A2428BE421BD3C2800874401 /* Super Bomberman 3.smc in Resources */,
+				A2428BC921BD3C2800874401 /* Super Metroid.smc in Resources */,
 				A2F20C141BA5C8570055FE0D /* Assets.xcassets in Resources */,
-				A2F20C151BA5C8570055FE0D /* Info.plist in Resources */,
-				A2F20C121BA5C8570055FE0D /* SNESGameCollectionViewCell.xib in Resources */,
+				A2428BDF21BD3C2800874401 /* Lufia 2- Rise of the sinistrals.smc in Resources */,
+				A2428B7221BD3C2700874401 /* Donkey Kong Country.png in Resources */,
+				A2428BBE21BD3C2800874401 /* Bubsy 2.png in Resources */,
+				A2428BD721BD3C2800874401 /* Aladdin.smc in Resources */,
+				A2428BC621BD3C2800874401 /* Super Mario All-Stars.png in Resources */,
+				A2428BBA21BD3C2800874401 /* Donkey Kong Country 2.png in Resources */,
+				A2428BFD21BD3C2800874401 /* Mega Man X 2.smc in Resources */,
+				A2428B7421BD3C2700874401 /* Castlevania - Dracula X.png in Resources */,
+				A2428B6421BD3C2700874401 /* Street Fighter II Turbo.smc in Resources */,
+				A2428BB221BD3C2800874401 /* Lufia - The fortress of Doom.png in Resources */,
+				A2428BCE21BD3C2800874401 /* Yoshis Safari.smc in Resources */,
+				A2428B6121BD3C2700874401 /* The Lion King.smc in Resources */,
+				A2428B6321BD3C2700874401 /* Super Mario All-Stars.smc in Resources */,
+				A2428B6E21BD3C2700874401 /* Super Bomberman 3.png in Resources */,
+				A2428B6821BD3C2700874401 /* Lufia 2- Rise of the sinistrals.png in Resources */,
+				A2428B5D21BD3C2700874401 /* Battletoads in Battelmania.smc in Resources */,
+				A2428BC421BD3C2800874401 /* Super Mario Kart.png in Resources */,
+				A2428BBD21BD3C2800874401 /* Bubsy - In claws encounters of the furred kind.png in Resources */,
+				A2428BBF21BD3C2800874401 /* The Lion King.png in Resources */,
+				A2428BDB21BD3C2800874401 /* F-Zero.smc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

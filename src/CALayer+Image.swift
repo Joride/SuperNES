@@ -8,17 +8,17 @@
 
 import QuartzCore
 
-extension CALayer
+@objc extension CALayer
 {
-    func imageRepresentation() -> UIImage
+    @objc func imageRepresentation() -> UIImage
     {
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, true, 0)
         let context = UIGraphicsGetCurrentContext()
 
-        self.renderInContext(context!)
+        self.render(in: context!)
         let outputImage = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
-        return outputImage;
+        return outputImage!;
     }
 }

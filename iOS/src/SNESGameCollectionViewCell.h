@@ -9,6 +9,6 @@
 @import UIKit;
 
 @interface SNESGameCollectionViewCell : UICollectionViewCell
-@property (weak, nonatomic, readonly) IBOutlet UILabel * titleLabel;
-@property (weak, nonatomic, readonly) IBOutlet UIImageView * imageView;
+@property (strong, nonatomic, readonly) UILabel * titleLabel;
+@property (strong, nonatomic, readonly) UIImageView * imageView;
 @end

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class SNESSelectGameStateViewController : UIViewController, SNESSelectGameStateViewControllerDelegate
+@objc class SNESSelectGameStateViewController : UIViewController, SNESSelectGameStateViewControllerDelegate
 {
     // needs to be set so that the app does not run into a dead end
-    var completion : ((String) -> Void)?
+    @objc var completion : ((String) -> Void)?
 
     // the ROM for which to show the saved states
-    var ROM : SNESROMFileManaging?
+    @objc var ROM : SNESROMFileManaging?
 
     let dataSource = SNESSelectGameStateDataSource()
 
@@ -31,13 +31,13 @@ class SNESSelectGameStateViewController : UIViewController, SNESSelectGameStateV
         self.collectionView.delegate = dataSource
     }
 
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated)
 
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSizeMake(self.view.bounds.size.width,
-            self.view.bounds.size.width / 1.3659 + 50)
+        flowLayout.itemSize = CGSize(width: self.view.bounds.size.width,
+                                     height: self.view.bounds.size.width / 1.3659 + 50)
         flowLayout.minimumInteritemSpacing = 10.0
 
         self.collectionView.collectionViewLayout = flowLayout
@@ -65,7 +65,7 @@ class SNESSelectGameStateDataSource : NSObject, UICollectionViewDataSource, UICo
 {
     weak var delegate : SNESSelectGameStateViewControllerDelegate?
 
-    var dateFormatter : NSDateFormatter
+    var dateFormatter : DateFormatter
 
     let  cellID = "cellID";
     weak var _collectionView: UICollectionView?
@@ -94,22 +94,22 @@ class SNESSelectGameStateDataSource : NSObject, UICollectionViewDataSource, UICo
 
     override init()
     {
-        self.dateFormatter = NSDateFormatter()
-        self.dateFormatter.timeStyle = .ShortStyle
-        self.dateFormatter.dateStyle = .MediumStyle
-        self.dateFormatter.locale = NSLocale.currentLocale()
+        self.dateFormatter = DateFormatter()
+        self.dateFormatter.timeStyle = .short
+        self.dateFormatter.dateStyle = .medium
+        self.dateFormatter.locale = NSLocale.current
     }
 
 
     func registerCellsWithCollectionView()
     {
     let nibName = "SNESGameCollectionViewCell"
-        let nib = UINib(nibName: nibName, bundle: NSBundle.mainBundle())
-        self.collectionView?.registerNib(nib, forCellWithReuseIdentifier:  cellID)
+        let nib = UINib(nibName: nibName, bundle: Bundle.main)
+        self.collectionView?.register(nib, forCellWithReuseIdentifier:  cellID)
     }
 
     /// CollectionViewDataSource
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         let numberOfItems : Int
         if let count = self.ROM?.saveStates.count
@@ -122,17 +122,26 @@ class SNESSelectGameStateDataSource : NSObject, UICollectionViewDataSource, UICo
         }
         return numberOfItems
     }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellID, forIndexPath: indexPath) as! SNESGameCollectionViewCell
-        self.configureCell(cell, atIndexPath: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellID, for: indexPath) as! SNESGameCollectionViewCell
+        self.configureCell(cell: cell, atIndexPath: indexPath as NSIndexPath)
         return cell
     }
     func configureCell(cell : SNESGameCollectionViewCell, atIndexPath indexPath : NSIndexPath)
     {
         let state = self.ROM?.saveStates[indexPath.item]
-
-        let dateString = self.dateFormatter.stringFromDate(state!.saveDate)
+        
+        let dateString: String
+        if let interval = state?.saveDate.timeIntervalSince1970
+            {
+                let date: Date = Date(timeIntervalSince1970: interval)
+                dateString = self.dateFormatter.string(from: date)
+        }
+        else
+        {
+            dateString = ""
+        }
 
         if (dateString.characters.count > 0)
         {
@@ -168,7 +177,7 @@ class SNESSelectGameStateDataSource : NSObject, UICollectionViewDataSource, UICo
         let index = indexPath.item
         let saveState = self.ROM?.saveStates[index]
         let path = saveState!.saveStateFilePath
-        self.delegate?.selectGameStateDataSourceDelegate(self, didSelectSaveStatePath: path)
+        self.delegate?.selectGameStateDataSourceDelegate(dataSource: self, didSelectSaveStatePath: path)
     }
 }
 
