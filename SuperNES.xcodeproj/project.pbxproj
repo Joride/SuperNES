@@ -103,6 +103,7 @@
 		A2428BFD21BD3C2800874401 /* Mega Man X 2.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5A21BD3C2600874401 /* Mega Man X 2.smc */; };
 		A2428BFE21BD3C2800874401 /* Star Fox.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5B21BD3C2600874401 /* Star Fox.smc */; };
 		A2428BFF21BD3C2800874401 /* Donkey Kong Country.smc in Resources */ = {isa = PBXBuildFile; fileRef = A2428B5C21BD3C2600874401 /* Donkey Kong Country.smc */; };
+		A2546C3A243E331700EEAA8B /* ROMs in Resources */ = {isa = PBXBuildFile; fileRef = A2546C39243E331700EEAA8B /* ROMs */; };
 		A27B50B31BA60D04002904F6 /* SNES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; };
 		A27B50B41BA60D04002904F6 /* SNES.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A27B50B81BA60D10002904F6 /* SNES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A27B50B21BA60CE3002904F6 /* SNES.framework */; };
@@ -307,6 +308,7 @@
 		A2428B5B21BD3C2600874401 /* Star Fox.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Star Fox.smc"; sourceTree = "<group>"; };
 		A2428B5C21BD3C2600874401 /* Donkey Kong Country.smc */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Donkey Kong Country.smc"; sourceTree = "<group>"; };
 		A24396841BA5A57B0010D26A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A2546C39243E331700EEAA8B /* ROMs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ROMs; path = "iOS/SuperNES-iphoneOS/resources/ROMs"; sourceTree = "<group>"; };
 		A26BD21F1BA1F011008EC2B9 /* SuperNES-TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SuperNES-TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A26BD2941BA1FED8008EC2B9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		A27B50AD1BA60CE3002904F6 /* SNES.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SNES.xcodeproj; path = submodules/SNES.xcodeproj; sourceTree = "<group>"; };
@@ -530,6 +532,7 @@
 		A2BD42EC1BA5A369000A7C00 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				A2546C39243E331700EEAA8B /* ROMs */,
 				A24396861BA5A5B90010D26A /* src */,
 				A2F20C161BA5C88B0055FE0D /* SuperNES-iphoneOS */,
 				A2F20C081BA5C8570055FE0D /* SuperNES-TV */,
@@ -668,6 +671,7 @@
 			children = (
 				A2F20C441BA5CAF20055FE0D /* CALayer+Image.swift */,
 				A2F20C451BA5CAF20055FE0D /* SNESROMFileManager.swift */,
+				A2BD42EC1BA5A369000A7C00 /* iOS */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -676,7 +680,6 @@
 			isa = PBXGroup;
 			children = (
 				A2F20C431BA5C9830055FE0D /* src */,
-				A2BD42EC1BA5A369000A7C00 /* iOS */,
 				C47EDC361A4F490800770F2C /* System Frameworks */,
 				C47EDC221A4F477600770F2C /* SuperNESTests */,
 				C47EDC071A4F477600770F2C /* Products */,
@@ -813,6 +816,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -961,6 +965,7 @@
 				A2F20C371BA5C88B0055FE0D /* SNESShoulderButton@2x.png in Resources */,
 				A2F20C351BA5C88B0055FE0D /* SNESFireButtons@2x.png in Resources */,
 				A2F20C401BA5C88B0055FE0D /* Images.xcassets in Resources */,
+				A2546C3A243E331700EEAA8B /* ROMs in Resources */,
 				A2F20C331BA5C88B0055FE0D /* SNES-DPad@2x.png in Resources */,
 				A2F20C3D1BA5C88B0055FE0D /* SNESGameCollectionViewCell.xib in Resources */,
 			);
@@ -1213,6 +1218,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = "iOS/SuperNES-iphoneOS/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1240,6 +1246,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/iOS/Supporting Files/Prefix.pch";
 				INFOPLIST_FILE = "iOS/SuperNES-iphoneOS/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
