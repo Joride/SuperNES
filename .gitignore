@@ -2,6 +2,7 @@
 .DS_Store
 .Trashes
 
+*ROMs/
 *.xcscmblueprint
 */xcuserdata/*
 xcuserdata
