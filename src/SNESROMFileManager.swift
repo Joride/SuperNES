@@ -251,7 +251,11 @@ class ROM :  NSObject, SNESROMFileManaging, Comparable
             
             if let imageFileName = (self.ROMName as NSString).appendingPathExtension("png")
             {
-                var imagePath = (self.fileManager.userDocumentsDirectory as NSString).appendingPathComponent(imageFileName)
+                guard let ROMsURL = Bundle.main.url(forResource: "ROMs",
+                                                          withExtension: nil)
+                else { fatalError("No ROMS folder found in the bundle.") }
+                var imagePath = (ROMsURL.path as NSString).appendingPathComponent(imageFileName)
+//                var imagePath = (self.fileManager.userDocumentsDirectory as NSString).appendingPathComponent(imageFileName)
                 let fileExists = self.fileManager.fileExists(atPath: imagePath)
                 if fileExists
                 {
@@ -340,7 +344,13 @@ class SNESROMFileManager : NSObject
         {
             do
             {
-                contents = try fileManager.contentsOfDirectory(atPath: resourceURL.path)
+                guard let ROMsURL = Bundle.main.url(forResource: "ROMs",
+                                                          withExtension: nil)
+                else { fatalError("No ROMS folder found in the bundle.") }
+                
+                print(ROMsURL)
+//                contents = try fileManager.contentsOfDirectory(atPath: resourceURL.path)
+                contents = try fileManager.contentsOfDirectory(atPath: ROMsURL.path)
                 if let directoryContents = contents
                 {
                     for aFileName in directoryContents
@@ -354,7 +364,7 @@ class SNESROMFileManager : NSObject
                         if (fileExtension == "smc" ||
                             fileExtension == "SMC")
                         {
-                            let fullFilePath = (resourceURL.path as NSString).appendingPathComponent(aFileName)
+                            let fullFilePath = (ROMsURL.path as NSString).appendingPathComponent(aFileName)
                             let aRom  = ROM(ROMFileName : aFileName,
                                             ROMPath: fullFilePath,
                                             fileManager: self.fileManager)
