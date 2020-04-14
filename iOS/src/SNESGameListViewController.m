@@ -96,7 +96,9 @@ UICollectionViewDelegateFlowLayout>
                  layout:(UICollectionViewLayout *)collectionViewLayout
  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGRectInset([UIScreen mainScreen].bounds, 50, 50).size;
+    id<SNESROMFileManaging> aRom = self.ROMFileManager.ROMs[indexPath.item];
+    UIImage * image = [UIImage imageWithContentsOfFile: aRom.imagePath];
+    return CGSizeMake(collectionView.frame.size.width, (collectionView.frame.size.width / image.size.width) * image.size.height);
 }
 -(void)collectionView:(UICollectionView *)collectionView
 didSelectItemAtIndexPath:(NSIndexPath *)indexPath
